@@ -1,0 +1,103 @@
+:root{
+    --header-color:#008080;
+    --header-color2:#f5f5f5;
+    --pading:20px;
+    --text-color:#ffff;
+}
+
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial',sans-serif;
+    background-color:var(--header-color2);
+    width: 100vw;
+}
+
+header{
+     background-color:var(--header-color);
+     padding: var(--pading);
+     color:var(--text-color);
+    
+}
+
+header h1
+{
+    font-size:36px;
+
+}
+main{
+    min-height: 78vh;
+    padding: var(--pading);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+main form{
+    display:flex;
+    justify-content: center;
+}
+
+form input[type="text"],button[type="submit"]
+    {
+             border: none;
+             font-size: 16px;
+             font-weight: 5oo;
+             border-radius: 5px;
+             padding: calc(var(--pading)/2);
+    }
+
+  form input[type="text"]{
+    flex-grow: 1;
+  }  
+
+  form button
+  {
+    background-color: var(--header-color);
+    color: var(--header-color2);
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  footer{
+    background-color: var(--header-color);
+    color:var(--header-color2);
+    padding: var(--pading);
+    text-align: center;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+  }
+
+  .result
+  {
+    background-color: #fff;
+    padding: var(--pading);
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  }
+  .result p [class="speech"]{
+    font-style: italic;
+    color:#808080;
+     margin-top: 2px;
+  }
+
+  .result div{
+    margin-top: 20px;
+  }
+  .result div a{
+    text-decoration: none;
+    background-color: var(--header-color);
+    color: var(--text-color);
+  }
+  
+  
+    
+  
